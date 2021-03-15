@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>LOGIN</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">    
+    </head>
+
+    <body>
+        <div id="login_page" class="container-fluid" style="display: block; text-align: center;">
+            <form class="form_signin">
+                <p id="login"> 로그인 </p>
+
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="user"> 사용자
+                        <input type="checkbox" value="admin"> 관리자
+                        <!-- checkbox 하나만 선택되도록 바꿔야함 -->
+                    </label>
+                </div>
+<!--
+                <img class="logo my-2 mx-auto" src="images/logo.jpg" alt="" height="180" width="180" style="display: block;"/>
+-->
+
+                <div id="Account">
+                    <input type="text" class="form-control my-2" placeholder="ID" id="login_id" size="10" required autofocus>
+                    <br><input type="password" class="form-control my-2" placeholder="PW" id="login_pw" size="10" required>
+                    <!-- input 입력창 사이즈 줄여야함 -->
+                </div>
+
+
+                <div class="checkbox mb-3">
+                    <labl>
+                        <input type="checkbox" value="remember-me"> 자동로그인
+                    </labl>
+                </div>
+
+            </form>
+        </div>
+
+        <script src="login.js"></script>
+
+        <!-- 전체적 사이즈 조정 필요 -->
+    </body>
+</html>

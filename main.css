@@ -1,0 +1,17 @@
+h1 {
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+#System_name {
+    text-align:center;
+    font-size: 300%;
+    font-family: verdana;
+}
+
+#logo {
+    width:180px;
+    height:180px;
+    display: block;
+}
