@@ -11,6 +11,23 @@
     </head>
   
     <body>
-        
+        <div id="singup_page" class="container">
+            <button id="goto_login" class="btn btn-primary btn-sm mb-3">
+                <i data-feather="arrow-left" width="15"></i> 로그인 화면으로
+            </button>
+
+            <h4 style="font-weight: bold; margin-bottom: 10px;"> 회원가입 </h4>
+
+            <div class="needs-validation" id="signup" novalidate>
+                <input type="text" id="userid" class="col-6 form-control mx-3" placeholder="ID" style="margin-bottom: 20px; margin-right: 20px;"required">
+                <button id="check_dup" class="btn btn-secondary btn-sm">중복확인</button>
+                <div class="valid-feedback mx-3">
+                    사용가능한 ID입니다!
+                </div>
+                <div id="id-dup-invalid-feedback" class="invalid-feedback mx-3">
+                    ID를 입력해주세요.
+                </div>
+            </div>
+        </div>
     </body>
 </html>
