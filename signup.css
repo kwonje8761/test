@@ -1,0 +1,19 @@
+#signup_main {
+    text-align:center;
+    font-size: 150%;
+    font-family: verdana;
+}
+
+#goto_login {
+    margin-top: 150px;
+}
+
+#userid #userpw #usermail{
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left:20px;
+}
+
+#signup_btn {
+    text-align:center;
+}

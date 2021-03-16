@@ -6,28 +6,44 @@
         <link rel="stylesheet" href="signup.css">
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script src="images/feather.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">  
     </head>
   
     <body>
-        <div id="singup_page" class="container">
-            <button id="goto_login" class="btn btn-primary btn-sm mb-3">
-                <i data-feather="arrow-left" width="15"></i> 로그인 화면으로
-            </button>
+        <div id="signup_page" class="container">
+            <form class="signup_form" method="post">
 
-            <h4 style="font-weight: bold; margin-bottom: 10px;"> 회원가입 </h4>
+                <button type="button" id="goto_login" class="btn btn-secondary btn-sm mb-3" onclick="location.href='main.html'">
+                    <i data-feather="arrow-left" width="15"></i>
+                    뒤로 
+                    </button>
+                    <p id="signup_main"> 회원가입 </p>
+                    <!--
+                        <h4 style="font-weight: bold; margin-bottom: 25px; text-align:center;"> 회원가입 </h4>
+                    -->
+                    <div id="signup" novalidate class="container-fluid">
+                        <input type="text" id="userid"class="form-control mx-1" placeholder="아이디" style="margin-bottom:15px;" required autofocus>
+                        <input type="password" id="userpw" class="form-control mx-1" placeholder="비밀번호" style="margin-bottom:15px;" required>
+                        <input type="password" id="userpw2" class="form-control mx-1" placeholder="비밀번호 확인" style="margin-bottom:15px;" required>
+                        <input type="email" id="usermail" class="form-control mx-1" placeholder="Email" style="margin-bottom:15px;" required>
 
-            <div class="needs-validation" id="signup" novalidate>
-                <input type="text" id="userid" class="col-6 form-control mx-3" placeholder="ID" style="margin-bottom: 20px; margin-right: 20px;"required">
-                <button id="check_dup" class="btn btn-secondary btn-sm">중복확인</button>
-                <div class="valid-feedback mx-3">
-                    사용가능한 ID입니다!
-                </div>
-                <div id="id-dup-invalid-feedback" class="invalid-feedback mx-3">
-                    ID를 입력해주세요.
-                </div>
-            </div>
+                        <div id="signup_btn">
+                            <button type="submit" class="btn btn-secondary" id="signup_btn">
+                                회원가입
+                            </button>
+                        </div>
+
+                    </div>
+            
+            </form>
+
         </div>
+
+        <script>
+            feather.replace()
+        </script>
     </body>
 </html>
