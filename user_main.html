@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <meta charset="UTF-8">
+            <title>PROJECT</title>
+            <link rel="stylesheet" href="main.css">
+            <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+            <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        </title>
+    </head>
+
+    <body>
+        <div id="user_main_page">
+            <div id="top">
+                <img class="logo my-2 mx-auto" src="images/logo.jpg" alt="" width="90" height="90"/>
+    
+                <div id="logout">
+                    <button type="button" id="goto_main" class="btn btn-secondary btn-sm mb-3" onclick="location.href='main.html'">
+                        <i data-feather="arrow-left" width="15"></i>
+                        로그아웃
+                    </button>
+                </div>
+            </div>
+
+            <hr/>
+
+            <table>
+                <tr style="vertical-align:top">
+                    <td style="width: 100px; border-right: 1px solid black; text-align:left;">
+                        <ul>
+                            <li style="margin-bottom:100%;">
+                                <a id="goto_face" href="user_main.html">얼굴등록</a>
+                            </li>
+                            <li style="margin-bottom:400px;">
+                                <a id="show_log" href="admin_main.html">로그보기</a>
+                                <!-- 테스트용 링크: 로그인 -->
+                            </li>
+                        </ul>
+                    </td>
+
+                    <td style="padding-left:10px;">
+                        CONTENTS
+                    </td>
+                </tr>
+            </table>
+            <div id="lists">
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

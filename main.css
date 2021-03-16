@@ -14,5 +14,21 @@ h1 {
 #logo {
     display: block;
     margin-bottom:20px;
+    margin-left: 20px;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}
+
+#top {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#logout {
+    width:10%;
+    float:right;
+}
