@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <meta charset="UTF-8">
+            <title>PROJECT</title>
+            <link rel="stylesheet" href="main.css">
+            <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+            <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        </title>
+    </head>
+
+    <body>
+        <div id="admin_main_page">
+            <div id="top">
+                <img class="logo my-2 mx-auto" src="images/logo.jpg" alt="" width="90" height="90"/> 
+                    <div id="logout">
+                        <button type="button" id="goto_main" class="btn btn-secondary btn-sm mb-3" onclick="location.href='main.html'">
+                            <i data-feather="arrow-left" width="15"></i>
+                            Logout
+                        </button>
+                    </div> 
+            </div>
+
+            <hr/>
+
+            <div id="contents">
+                <table>
+                    <tr style="vertical-align:top">
+                        <td style="width: 100px; border-right: 1px solid black; text-align:left;">
+                            <ul>
+                                <li style="margin-bottom:100%;">
+                                    <a id="goto_face" href="admin_main.html">Users</a>
+                                </li>
+                                    <!-- 테스트용 링크: 관리자 메인페이지 -->
+                                <li style="margin-bottom:400px;">
+                                    <a id="show_log" href="admin_main.html">Devices</a>
+                                    <!-- 테스트용 링크: 사용자 메인페이지 -->
+                                </li>
+                            </ul>
+                        </td>
+    
+                        <td style="padding-left:10px;">
+                            <div id="admin_content">
+                                CONTENTS
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <script>
+            feather.replace()
+        </script>
+    </body>
+</html>

@@ -15,42 +15,49 @@
     <body>
         <div id="user_main_page">
             <div id="top">
-                <img class="logo my-2 mx-auto" src="images/logo.jpg" alt="" width="90" height="90"/>
-    
-                <div id="logout">
-                    <button type="button" id="goto_main" class="btn btn-secondary btn-sm mb-3" onclick="location.href='main.html'">
-                        <i data-feather="arrow-left" width="15"></i>
-                        로그아웃
-                    </button>
-                </div>
+                <img class="logo my-2 mx-auto" src="images/logo.jpg" alt="" width="90" height="90"/> 
+                    <div id="logout">
+                        <button type="button" id="goto_main" class="btn btn-secondary btn-sm mb-3" onclick="location.href='main.html'">
+                            <i data-feather="arrow-left" width="15"></i>
+                            Logout
+                        </button>
+                    </div> 
             </div>
 
             <hr/>
 
-            <table>
-                <tr style="vertical-align:top">
-                    <td style="width: 100px; border-right: 1px solid black; text-align:left;">
-                        <ul>
-                            <li style="margin-bottom:100%;">
-                                <a id="goto_face" href="user_main.html">얼굴등록</a>
-                            </li>
-                            <li style="margin-bottom:400px;">
-                                <a id="show_log" href="admin_main.html">로그보기</a>
-                                <!-- 테스트용 링크: 로그인 -->
-                            </li>
-                        </ul>
-                    </td>
-
-                    <td style="padding-left:10px;">
-                        CONTENTS
-                    </td>
-                </tr>
-            </table>
-            <div id="lists">
-
+            <div id="contents">
+                <table>
+                    <tr style="vertical-align:top">
+                        <td style="width: 100px; border-right: 1px solid black; text-align:left;">
+                            <ul>
+                                <li style="margin-bottom:100%;">
+                                    <button type="button" id="goto_face" onclick="window.open('face.html', 'win', 'width=500, height=750')">Add Face</button>
+                                    <!--
+                                    <button type="button" id="goto_face">Add Face</button>
+                                    <a id="goto_face" href="user_main.html">Add Face</a> -->
+                                </li>
+                                    <!-- 테스트용 링크: 사용자 메인페이지 -->
+                                <li style="margin-bottom:100%;">
+                                    <a id="show_log" href="admin_main.html">My logs</a>
+                                    <!-- 테스트용 링크: 관리자 메인페이지 -->
+                                </li>
+                            </ul>
+                        </td>
+    
+                        <td style="padding-left:10px;">
+                            <div id="user_content">
+                                CONTENTS
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
 
         </div>
-
+        <script src="user.js"></script>
+        <script>
+            feather.replace()
+        </script>
     </body>
 </html>
